@@ -1,0 +1,89 @@
+.video{
+	background: url(../images/icon_video.png) no-repeat;
+}
+.image{
+	background: url(../images/icon_image.png) no-repeat;
+}
+
+.ww-icon{
+	background: url(../images/icon_sprites_off.png) no-repeat;
+	width:20px;
+	height:20px;
+	display: inline-block;
+}
+a .ww-icon,
+a .ww-button{
+	position:absolute;
+	margin-left:-25px;
+}
+a:hover .ww-icon{ background-image: url(../images/icon_sprites_on.png); }
+.ww-icon-on{ background-image: url(../images/icon_sprites_on.png); }
+.ww-icon-carrot-e{ background-position: -5px -5px; }
+.ww-icon-carrot-s{ background-position: -35px -5px; }
+.ww-icon-delete{ background-position: -65px -5px; }
+.ww-icon-arrow-s{ background-position: -95px -5px; }
+.ww-icon-message{ background-position: -5px -35px; }
+.ww-icon-mail{ background-position: -35px -35px; }
+.ww-icon-download{ background-position: -65px -35px; }
+.ww-icon-badge{ background-position: -95px -35px; }
+.ww-icon-search{ background-position: -5px -65px; }
+.ww-icon-edit{ background-position: -35px -65px; }
+.ww-icon-print{ background-position: -65px -65px; }
+.ww-icon-write{ background-position: -95px -65px; }
+.ww-icon-clock{ background-position: -125px -65px; }
+.ww-icon-camcorder{ background-position: -5px -95px; }
+.ww-icon-film{ background-position: -35px -95px; }
+.ww-icon-camera{ background-position: -65px -95px; }
+.ww-icon-star{ background-position: -95px -95px; }
+.ww-icon-profile{ background-position: -5px -125px; }
+
+.interested .ww-icon, button.interested{ background-image: url(../images/icon_sprites_on.png); }
+.expandSessionImg .ww-icon{ background-position: -5px -5px; }
+.expanded .ww-icon{ background-position: -35px -5px; }
+.leadSelected .ww-icon{ background-image: url(../images/icon_sprites_on.png); }
+
+.resultRow a.interest{
+	width: auto;
+}
+
+.ww-button-schedule{ 
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	background: #888 url(../images/button_sprites.png) no-repeat -5px -5px;
+	width:20px;
+	height:20px;
+	display: inline-block;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+a:hover .ww-button-schedule{
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.imageAddDisabled .ww-button-schedule{}
+.scheduleSession .ww-button-schedule,
+.imageAdd .ww-button-schedule{
+	background-color: #36d;
+}
+.imageAddWaiting .ww-button-schedule{
+	background-color: #ed3;
+}
+.imageRemoveDisabled .ww-button-schedule,
+.imageConferenceEvent .ww-button-schedule,
+.imageSpeaking .ww-button-schedule{
+	background-position: -5px -35px;
+}
+.imageRemove .ww-button-schedule{
+	background-color: #36d;
+	background-position: -5px -35px;
+}
+.imageRemoveWaiting .ww-button-schedule{
+	background-color: #ed3;
+	background-position: -5px -35px;
+}
+ul.listTools li.addIcon, .listItem .addIcon{ background: url(../images/icon_sprites_off.png) -65px -35px no-repeat; }
+ul.listTools li.addIcon:hover, .listItem .addIcon:hover{ background: url(../images/icon_sprites_on.png) -65px -35px no-repeat; }
+ul.listTools li.aboutIcon, .listItem .aboutIcon{ background: url(../images/icon_sprites_off.png) -120px -5px no-repeat; }
+ul.listTools li.aboutIcon:hover, .listItem .aboutIcon:hover{ background: url(../images/icon_sprites_on.png) -120px -5px no-repeat; }

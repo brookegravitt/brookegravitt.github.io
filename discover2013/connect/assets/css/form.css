@@ -1,0 +1,290 @@
+.formRow{
+	clear: both;
+	margin-bottom: 5px;
+	padding: 6px 0px;
+	*zoom: 1;
+}
+.formRow:after{
+	content: " ";
+	display: block;
+	clear: both;
+	height: 0px;
+	visibility: hidden;
+}
+.formRow label:first-child{
+	font-weight: bold;
+	letter-spacing:0.3px;
+	display: block;
+	float: left;
+	width: 30%;
+	text-align: right;
+	padding-right: 25px;
+	margin-right: 5px;
+	color:#000;
+}
+#loginForm .formRow label:first-child{
+	min-width: 50px;
+	max-width: 180px;
+}
+.formRow div.paragraph{
+	float: left;
+	width: 60%;
+}
+.formInstruct .count .overLimit{
+	font-weight: bold;
+	color: #c00;
+}
+.photoUpload .small{
+	display: inline;
+	font-weight: normal;
+	color: #999;
+	font-size: 11px;
+}
+.formRow textarea,
+.formRow select,
+.formRow input[type="text"],
+.formRow input[type="email"],
+.formRow input[type="password"]{
+	border: 1px solid #c0c0c0;
+	width: 185px;
+}
+.formRow textarea,
+.formRow input[type="text"],
+.formRow input[type="email"],
+.formRow input[type="password"]{
+	padding: 3px;
+}
+.formRow .formInstruct{
+	margin-left: 30%;
+	padding-left: 30px;
+	padding-top: 5px;
+	color: #666;
+	font-size: 11px;
+	clear: left;
+}
+.formReq label{
+	background: url(../images/bullet_asterix_red.png) 98% top no-repeat;
+}
+.formReq .formContent label{
+	background: none;
+}
+
+.formContent{
+	float: left;
+	text-align: left;
+}
+.formContent .formInstruct{
+	margin: 0px;
+	padding: 0px;
+}
+.formRow .formContent label{
+	background: none;
+	float: none;
+	padding: 0 0 0 20px;
+	width: auto;
+	font-weight:normal;
+	color:#333;
+	text-align: left;
+	letter-spacing:0.3px;
+	display: block;
+}
+.formRow .formContent label input{
+	position:relative;
+	margin-left:-20px;
+}
+.formRow .formOptionList{
+	float: left;
+	border: 1px solid #ccc;
+	background: #fff;
+	width:60%;
+}
+.formRow .formScrollList{
+	overflow-y: scroll;
+	max-height:150px;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+.formRow .formOptionList label{
+	text-align: left;
+	background: none;
+	display: block;
+	float: none;
+	width: auto;
+	max-width: none;
+	border-bottom: 1px solid #ccc;
+	font-weight: normal;
+	padding: 0px;
+	margin: 0px;
+	padding-right: 5px;
+	cursor: pointer;
+}
+.formRow .formOptionList label:last-child{
+	border: none;
+}
+.formRow .formOptionList label:hover{
+	background: #f3f3f3;
+}
+.formRow .formOptionList label input{
+	margin: 10px 5px;
+	border: 0;
+}
+.formButtonRow{}
+fieldset{
+	padding: 5px;
+	border:none
+}
+.ui-dialog #editDetailsDialog fieldset{
+	padding: 5px;
+	border:none;
+	background-color:#f7f7f7;
+	border:1px solid #e0e0e0;
+	padding:15px;
+}
+fieldset legend{
+	color:#000;
+	*margin:0 0 1em -0.4em;
+	padding:0;
+	font-weight: bold;
+}
+.formBlocker{
+	position: absolute;
+	background: #fff;
+	filter:alpha(opacity=90);-moz-opacity:.90;opacity:.90;
+	background: url(../images/icon_loading_small.gif) 5px center no-repeat #F7F7F7;
+	height: 33px;
+	width: 500px;
+	z-index: 1;
+	padding-left: 30px;
+	line-height: 33px;
+	cursor: default;
+	display: none;
+	color: #2D6895;
+}
+form .error{
+	/*
+		background: #FDE7E7;
+		border-bottom: 1px solid #DD9999;
+		border-top: 1px solid #DD9999;
+		padding: 5px 0px;
+	*/
+}
+form .error label{
+	background: url(../images/feedback_error.gif) 98% top no-repeat;
+}
+form .success label{
+	background: url(../images/success.gif) 98% top no-repeat;
+}
+
+.hiddenButton{
+	display:none;
+}
+#loginForm h2{
+	padding-top: 10px;
+	/* border-bottom: 1px solid #ddd; */
+	max-width: 400px;
+	float: none;
+	display: block;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+#loginForm h2:first-child{
+	margin-top: 0px;
+}
+#loginForm label:first-child{
+	float: none;
+	clear: both;
+	text-align: left;
+}
+#loginForm .formButtonRow label{
+	display: none;
+}
+#loginForm #buttonLogin{
+	margin-right: 10px;
+}
+#loginForm #fieldsetLoginButton{
+	width: 300px;
+	display: block;
+	float: right;
+	background: #f6f6f6;
+	padding: 10px;
+	padding-top: 5px;
+	-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;
+}
+#loginForm #gpLogin{
+	display: block;
+	height: 22px;
+	width: 152px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background: url(../images/social_icons/google_login.png) no-repeat;
+}
+
+.phoneField span{
+	display: block;
+	float: left;
+	padding-right: 1px;
+}
+
+.areaCode,
+.extension,
+.countryCode{
+	width: 75px;
+}
+
+.phonePrefix{
+	width: 75px;
+}
+
+.phoneSuffix,
+.phoneField .phoneNumber{
+	width: 150px;
+}
+
+.phoneField .areaCode input,
+.phoneField .countryCode input,
+.phoneField .phonePrefix input,
+.phoneField .phoneSuffix input,
+.phoneField .phoneNumber input,
+.phoneField .extension input{
+	width: auto;
+}
+
+.phoneField .phonePrefix input{
+	margin-right: 5px;
+}
+
+.phoneField .phoneSuffix input,
+.phoneField .phoneNumber input{
+	width: 130px;
+}
+
+.phoneField .extension input{
+	width: 55px;
+	margin-left: 2px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	.phonePrefix{
+		width: 68px;
+	}
+}
+
+@-moz-document url-prefix() {
+	.phoneField .areaCode,
+	.phoneField .countryCode,
+	.phoneField .extension{
+		width: 65px;
+	}
+
+	.phoneField .phonePrefix{
+		width: 60px;
+	}
+
+	.phoneField .extension input{
+		width: 45px;
+	}
+}
+
+.phoneField .formInstruct{
+	font-size: 9px;
+}

@@ -1,0 +1,43 @@
+.ks-container{
+	text-align:right;
+	padding:1px 1px 1px 0.5em;
+	border: 1px solid #ddd;
+	background:#fff;
+}
+#globalSearch .ks-container{
+	zoom: 1;
+}
+.ks-container .searchPhrase{
+	border:0;
+	float:left;
+	font-size:1.2em;
+	width:73%;
+	outline-style: none;
+	background:none;
+	color:#666;
+}
+.ks-clear{
+	float: right;
+	margin-top:0.25em;
+	cursor:pointer;
+	padding-right: 2px;
+}
+.ks-container .searchSubmit{
+	margin:0;
+	font-size:0.9em;
+	float: right;
+}
+.clear-both{
+	clear: both;
+}
+.ks-container .no-phrase{
+	color:#bbb;
+	font-style:italic;
+}
+
+.ks-active{
+	border:1px solid #999;
+}
+.ks-active .searchPhrase{
+	color:#000;
+}

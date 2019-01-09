@@ -1,0 +1,34 @@
+try {void 0===window.QSI.Empty&&(QSI.Empty=QSI.util.Class({initialize:function(a){this.globalInitialize(a)}}));
+QSI.RunIntercepts = function(){
+QSI.util.watchPage();
+QSI.util.observe(window, 'message', function(e){
+	if (e.data)
+	{
+		var parts = e.data.split('|');
+		if (parts[0] == 'QualtricsEOS')
+		{
+			var sid = parts[1];
+			var ssid = parts[2];
+			QSI.history.logSurvey(sid,ssid);
+		}
+	}
+
+});
+
+QSI.history.logVisit();
+QSI.history.logIntercept('SI_bmzq7cpQAevceB7', 'DependencyResolver');
+(function(){
+	var QSIEmpty = new QSI.Empty({
+		id:'SI_bmzq7cpQAevceB7',
+		type:'Empty'
+	});
+	QSI.reg['SI_bmzq7cpQAevceB7'] = QSIEmpty;
+})();};
+if(typeof JSON === 'undefined')
+{
+	var loader = new QSI.util.ScriptLoader('https://a248.e.akamai.net/img.qualtrics.com/WRQualtricsShared/JavaScript/SiteInterceptEngine/');
+	loader.load('JSONParseModule.js').done(QSI.RunIntercepts);
+}
+else
+	QSI.RunIntercepts();
+}catch(e){QSI.dbg.e(e);}

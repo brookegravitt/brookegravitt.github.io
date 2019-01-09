@@ -1,0 +1,339 @@
+a{
+	text-decoration: none;
+	color: #5776B2;
+}
+a img{
+	border: none;
+}
+body.popup #templateMain{
+	width: 100%!important;
+}
+.button{
+	width: 95%;
+	margin: 10px;
+}
+.default{
+	width: 100%;
+	text-align: center;
+}
+.default img{
+	background: url(../../images/profile_male.png) no-repeat;
+	height: 128px;
+	width: 128px;
+}
+.detailsWidget address{
+	font-style: normal;
+	text-indent: 0;
+}
+.detailsWidget .recommended ul{
+	display: none;
+	padding-left: 40px;
+}
+.detailsWidget .expanded ul{
+	display: block;
+}
+.detailsWidget li a,
+.detailsWidget .sessionName{
+	display: block;
+	padding:0.4em 0;
+}
+.detailsWidget .download,
+.detailsWidget .media,
+.detailsWidget .sessionName,
+#mediaList a{
+	padding-left: 25px;
+}
+.detailsWidget .sessionTimes .ww-icon {
+	margin:0;
+}
+.detailsWidget .sessionName {
+	display:block;
+}
+.sessionTimes .availableSessions, 
+#leftCol fieldset.special legend,
+.sessionRating .hide,
+#ciscoVideoTemplate, 
+#html5Video,
+#fileDetailDialog,
+#fileDetailDialog .formButtonRow{
+	display: none;
+}
+
+#sessionSchedule ul.sessionTimeList .sessionRoom {
+	display:block;
+}
+
+#documentDownload .listScroll{border: none;}
+
+fieldset{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin: 10px;
+	/*margin-top: 15px;*/
+	padding: 10px;
+	margin-right: 0;
+	clear: both;
+}
+fieldset legend{
+	padding: 0 5px;
+	margin: 0 5px;
+	color: #999;
+	font-size: 1.3em;
+	/*** to fix ie 9 rounded corners with legend problem ***/
+	/*display: inline-block;
+	position: absolute;
+	margin-top: -19px;
+	background: #fff;*/
+}
+#rightCol .widgetScroll ul{
+	max-height: 200px;
+	overflow: auto;
+}
+.detailHeader{
+	clear:both;
+}
+h1, .detailsWidget p{
+	margin: 0;
+}
+h1 button{
+	border: none;
+	margin: 2px 5px 0 0;
+	padding: 0;
+	float:left;
+	cursor: pointer;
+}
+.jobTitle{
+	font-style: italic;
+}
+#leftCol h2{
+	margin: 0;
+	color: #bbb;
+}
+#leftCol{
+	float: left;
+	width: 70%;
+	padding-right: 2%;
+}
+#leftCol fieldset{
+	margin-left: 0;
+}
+#leftCol fieldset.special{
+	border: none;
+	padding:0;
+	margin: 0;
+}
+#loginForm fieldset{
+	clear: none;
+}
+#rightCol{
+	float: left;
+	width: 25%;
+	border-left: 1px solid #ccc;
+	padding-left: 1%;
+} 
+
+.socialIcon{
+	height: 21px;
+	width: 60px;
+	margin: 5px;
+}
+#templateContent{
+	color: #999;
+}
+.thinWindow #rightCol fieldset{
+	font-size: .9em!important;
+}
+.thinWindow #rightCol legend{
+	font-size: 1.2em!important;
+	padding: 0 2px!important;
+	margin: 0!important;
+}
+.thinWindow #socialIcons{
+	float: none!important;
+}
+ul, ol, li{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	list-style: none;
+}
+
+.sessionRating{
+	clear:both;
+	padding:0 0 0.5em;
+	overflow:hidden;
+	visibility:hidden;
+}
+.sessionRating:after{
+	visibility:hidden;
+	height:0;
+	content:'.';
+	font-size:0;
+	clear:both;
+}
+.sessionRating label{
+	display:block;
+}
+.sessionRating .starRating{
+	float:left;
+}
+.sessionRating .starCount{
+	float:left;
+	display:inline-block;
+	padding:0.2em 0.5em 0;
+}
+.sessionRating .formButton{
+	font-size: 0.9em;
+	margin-left: 0.6em;
+	padding: 0.1em 0.2em;
+}
+#currentUserRating{
+	visibility:hidden;
+}
+
+/*--- Comments/Blog Styles ---*/
+#comment{
+	margin-bottom: 20px;
+	clear: both;
+}
+#comment h3{
+	float: left;
+}
+#comment button{
+	float: right;
+	margin:0 0 10px 10px;
+}
+a#getMoreComments{
+	display:none;
+	padding:0.6em;
+	text-align:center;
+	cursor: pointer;
+}
+a#getMoreComments:hover{
+	background:#ffb;
+}
+#commentDialog textarea{
+	margin: 0px;
+	width: 95%;
+	height: 140px;
+}
+#comment textarea{
+	float: left;
+	display: block;
+	margin-right: 10px;
+	height: 100px;
+	width: 50%;
+}
+#comment ul.list li{
+	border-top: 1px solid #ddd;
+}
+#comment ul.list li:first-child{
+	border: none;
+}
+#comment ul.list div{
+	margin: 10px;
+	float: left;
+}
+#comment ul.list div i{
+	display: block;
+	font-size: 10px;
+	margin-top: 5px;
+}
+#comment ul.list div.commentMessage{
+	margin-left:90px;
+	float:none;
+}
+#comment ul.list div.commentPhoto{
+	width: 50px;
+	height: 50px;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;
+	margin-right: 0px;
+	background: url(../../images/comment_male.png) center center no-repeat;
+}
+#comment ul.list div.floatClear{
+	clear: both;
+	float: none;
+	display: block;
+}
+input#editExhibitorLink{float: right;}
+#mediaPopup{
+	display: none; 
+	text-align: center;
+}
+#carousel{
+	display: none;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	margin: 10px auto;
+}
+#carousel a{
+	display: block;
+	background-position: center center;
+	width: 150px;
+	height: 150px;
+	background-repeat: no-repeat;
+}
+div.profileImage{
+	margin: 20px auto;
+}
+ul#socialIcons{
+	margin: 0 0 5px;
+	padding: 0px;
+	list-style: none;
+}
+ul#socialIcons li{
+	margin: 0px 2px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 32px;
+	width: 32px;
+	display: inline-block;
+	cursor: pointer;
+}
+ul#socialIcons li.facebook{background-image: url(../../images/social_icons/facebook-32.png);}
+ul#socialIcons li.linkedin{background-image: url(../../images/social_icons/linkedin-32.png);}
+ul#socialIcons li.twitter{background-image: url(../../images/social_icons/twitter-32.png);}
+ul#socialIcons li.google{background-image: url(../../images/social_icons/google-32.png);}
+ul#socialIcons li.blog{background-image: url(../../images/social_icons/rss-32.png);} /* icon created by komodomedia.com, licensed under a Creative Commons Attribution-Share Alike 3.0 Unported License. */
+.addthis_toolbox{
+	margin-bottom:5px;
+}
+
+fieldset .ww-icon{
+	margin-top:-3px;
+}
+
+.sendMessage, .makeLead, .leadSelected{ padding: 3px 0px 3px 25px; }
+#additionalInfo .formRow label{
+	padding-right:0;
+}
+#speakerSessions span{
+	font-size: 0.8em;
+	margin-left: 5px;
+}
+#speakerSessions h3{
+	margin-bottom: 5px;
+}
+#speakerSessions div{
+	line-height: 1.5em;
+	margin-bottom: 5px;
+}
+fieldset#speakers{
+	font-size: 16px;
+}
+#exhibitorLogo{
+	height: 120px;
+	display: block;
+	margin: 10px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#fileDetailDialog fieldset{
+	max-height: 500px;
+	overflow: auto;
+}

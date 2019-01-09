@@ -1,0 +1,171 @@
+li.navAccountActive #navAccountMenu{
+	display: block;
+}
+ul#navAccountMenu{
+	display: none;
+	position:absolute;
+	z-index:100;
+	margin:0;
+	padding:0.3em;
+	text-align: left;
+	list-style: none;
+	/*ie7 fix*/
+	*top: 23px;
+	*right: 20px;
+	*min-width: 200px;
+}
+#navAccountMenu .menuDivider{
+	background: #cdcdcd;
+	font-size: 0;
+	height: 1px;
+	float: none;
+	line-height: 0;
+	margin: 6px 7px;
+}
+#navAccountMenu .navItem{
+	display: block;
+	padding:8px 10px;
+	clear:both;
+}
+#navAccountMenu .nm-clear-styles{
+	background:none;
+	border:0;
+	padding:9px 11px;
+}
+#navAccountMenu .navItem a{
+	display: inline;
+	white-space: nowrap;
+}
+#navAccountMenu .navItem:hover{
+}
+
+#navAccountLink{
+	background: transparent url(../../images/icon_account.png) no-repeat right 4px;
+	padding-right: 11px;
+	*background-position: right 9px;
+}
+.navAccountActive #navAccountLink{
+	background: transparent url(../../images/icon_account.png) no-repeat right -10px;
+	*background-position: right -5px;
+}
+#templateHeader #notify, 
+#navAccount .notify,
+#editAccountTabs .notify{
+	display: none;
+	position: absolute;
+	width: 1.5em;
+	height: 1.5em;
+	line-height: 1.5em;
+	text-align: center;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: bold;
+	color: white;
+
+/*	box shadow*/
+	-webkit-box-shadow:
+		inset 0px 1px 0px rgba(255,255,255,35),
+		0px 1px 1px rgba(0,0,0,.2);
+	-moz-box-shadow:
+		inset 0px 1px 0px rgba(255,255,255,.35),
+		0px 1px 1px rgba(0,0,0,.2);
+	box-shadow:
+		inset 0px 1px 0px rgba(255,255,255,.35),
+		0px 1px 1px rgba(0,0,0,.2);
+
+/*	border radius*/
+	-webkit-border-radius:4em;
+	-moz-border-radius:4em;
+	border-radius:4em;
+
+	
+/*	gradient background*/
+	background-image: -webkit-linear-gradient(top, rgb(254, 218, 113), rgb(254, 186, 72));
+	background-image: -moz-linear-gradient(top, rgb(254, 218, 113), rgb(254, 186, 72));
+	background-image: -o-linear-gradient(top, rgb(254, 218, 113), rgb(254, 186, 72));
+	background-image: -ms-linear-gradient(top, rgb(254, 218, 113), rgb(254, 186, 72));
+	background-image: linear-gradient(top, rgb(254, 218, 113), rgb(254, 186, 72));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#feda71', EndColorStr='#feba48');
+ 
+	border:1px solid #dea94f;
+}
+#templateHeader #notify{
+	position: static;
+	margin-top: -3px;
+}
+#navAccount #historyLink{
+	display: none;
+}
+#navAccount .navIcon{
+	width: 25px;
+	height: 25px;
+	background: transparent url(../../images/icon_topNav.png) no-repeat;
+	float: left;
+	display: block;
+}
+#navAccount #myProfileLink .navIcon{background-position: -305px 0;}
+#navAccount #editAccountLink .navIcon{background-position: -29px 0;}
+#navAccount #exhibitorListLink .navIcon{background-position: -214px 0;}
+#navAccount #messagesLink .navIcon{background-position: -59px 0;}
+#navAccount #surveysLink .navIcon{background-position: -123px 0;}
+#navAccount #historyLink .navIcon{background-position: -90px 0;}
+#navAccount #myProfileLink:hover .navIcon{background-position: -305px -26px;}
+#navAccount #editAccountLink:hover .navIcon{background-position: -29px -26px;}
+#navAccount #exhibitorListLink:hover .navIcon{background-position: -214px -26px;}
+#navAccount #messagesLink:hover .navIcon{background-position: -59px -26px;}
+#navAccount #surveysLink:hover .navIcon{background-position: -123px -26px;}
+#navAccount #historyLink:hover .navIcon{background-position: -90px -26px;}
+
+#navAccountMenu #historyMenu{
+	display: none;
+	position:absolute;
+	width: 400px;
+	max-height: 400px;
+	list-style: none;
+	overflow-x: hidden !important;
+	margin:0;
+	padding:0;
+}
+#navAccountMenu #historyLink:hover #historyMenu{
+	display:block;
+}
+#historyMenu .navItem{
+	clear: both;
+	min-height: 37px;
+	overflow: hidden;
+	width: 370px;
+}
+#historyMenu span.historyIcon{
+	width: 25px;
+	height: 25px;
+	border: 1px solid #CDCDCD;
+	float: left;
+	margin-right: 15px;
+	background: transparent url(../../images/icon_topNav.png) 0 1px no-repeat;
+}
+#historyMenu span.historyTitle{
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#historyMenu span.historySubtitle{
+	display: block;
+	white-space: nowrap;
+}
+#historyMenu span.exhibitor{background-position: -210px 0;}
+#historyMenu span.group{background-position: -241px 3px;}
+#historyMenu span.person{background-position: -303px 0;}
+#historyMenu span.session{
+	background-position: -271px 4px;
+	width: 26px;
+	height: 26px;
+}
+#historyMenu span.speaker{
+	background-position: -181px 3px;
+	width: 26px;
+	height: 26px;
+}
+#historyMenu .navItem:hover span.exhibitor{background-position: -210px -25px;}
+#historyMenu .navItem:hover span.group{background-position: -241px -25px;}
+#historyMenu .navItem:hover span.person{background-position: -303px -25px;}
+#historyMenu .navItem:hover span.session{background-position: -271px -25px;}
+#historyMenu .navItem:hover span.speaker{background-position: -181px -25px;}
